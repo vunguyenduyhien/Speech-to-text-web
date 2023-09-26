@@ -1,0 +1,131 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.record,
+.download,
+.read,
+.clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.record:hover,
+.download:hover,
+.read:hover,
+.clear:hover {
+  background-color: #0056b3;
+}
+
+.record:active,
+.download:active,
+.read:active,
+.clear:active {
+  background-color: #003978;
+}
+
+.download:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.line {
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+.result {
+  min-height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.result p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.interim {
+  font-style: italic;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.select-wrapper {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn ion-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.bnt-main {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin-right: 5px;
+}

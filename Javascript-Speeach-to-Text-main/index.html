@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Speech to Text with SpeechSynthesis</title>
+</head>
+
+<body>
+  <div class="container">
+    <p class="heading">Speech to Text</p>
+    <div class="controls">
+      <button class="record">
+        <p>Start Listening</p>
+      </button>
+
+      <div class="select-wrapper">
+        <select id="language">
+          <script src="./languages.js"></script>
+        </select>
+      </div>
+    </div>
+
+    <div class="line"></div>
+    <div class="result" spellcheck="false" placeholder="Text will be shown here">
+      <p class="interim"></p>
+    </div>
+    <div class="bnt-main">
+      <button class="download" disabled>Download Text</button>
+      <button class="read">Read Text</button>
+      <button class="clear">Clear</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
